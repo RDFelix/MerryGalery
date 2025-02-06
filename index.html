@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,19 +16,18 @@
         font-style: normal;
     }
 </style>
-<body class="m-0 bg-blue-950">
+<body class="m-0 bg-[#faf5ef] md:px-20 md:py-10">
     <header class="grid grid-cols-2 gap-2 px-5 py-3 md:gap-5 md:px-10 md:py-5">
         <section class="">
             <article class="flex items-center justify-center w-full">
-                <label for="dropzone-file" class="flex flex-col items-center justify-center w-full min-h-36 md:max-h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
-                    <div class="flex flex-col items-center justify-center p-5">
+                <label for="dropzone-file" class="flex flex-col items-center justify-center w-full min-h-20 md:max-h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-[#011d44]">
+                    <div class="flex flex-col items-center justify-center p-1">
                         <svg class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"/>
                         </svg>
-                        <p class="mb-2 text-sm text-gray-500 dark:text-gray-400 text-center"><span class="font-semibold">Sube aqui</span> las imagenes recuerdo de la boda</p>
-                        <p class="text-xs text-gray-500 dark:text-gray-400 text-center">SVG, PNG, JPG, JPGE or GIF</p>
+                        <p class="mb-2 text-sm text-gray-500 dark:text-gray-400 text-center"><span class="font-semibold">Sube aqui</span> los recuerdos</p>
                     </div>
-                    <input id="dropzone-file" type="file" class="hidden" />
+                    <input id="dropzone-file" type="file" class="hidden"/>
                 </label>
             </article> 
         </section>
@@ -83,20 +82,19 @@
             </button>
         </section>
     </header>
-    <main class="grid grid-cols-2 gap-2 px-5 py-2 md:grid-cols-5 md:gap-5">
+    <main class="grid grid-cols-2 gap-2 px-5 py-2 md:grid-cols-3 md:gap-5">
+        <h1 class="text-4xl text-center text-slate-50 col-span-2 bg-[#011d44] pb-0 pt-2 px-5 rounded-[50px] md:col-span-3 md:text-7xl" style="font-family: signature, normal; background-image: url('./assets/img/flower_2.png'); background-repeat: no-repeat; background-position-x: 95%; background-size: 12%;">Recuerdos de la boda</h1>
         <section id="photos_1">    
-            <article class="group overflow-hidden rounded-lg my-3">
-                <img class="h-auto w-100 bg-slate-500 transition-all md:max-w-72 group-hover:brightness-50" src="./assets/img/1.jpg" alt="image description">
-            </article>
-            <article class="overflow-hidden rounded-lg my-3">
-                <video class="h-auto w-100 bg-slate-500 transition-all md:max-w-72 group-hover:brightness-50" controls>
-                    <source src="./assets/img/video_1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+            <article class="mb-4 w-full">
+                <a href="ver.html">
+                    <img class="rounded-lg hover:brightness-75 h-auto transition-all" src="./assets/img/1.jpg" alt="image description">
+                    <div class="flex justify-between mt-2 items-center">
+                        <h5 class="text-xs tracking-wider md:text-base"><span class="bg-pink-400 p-1 rounded-full shadow-lg">🌷</span> Felix Gabriel Ruiz</h5>
+                    </div>
+                </a>
             </article>
         </section>
         <section id="photos_2">
-        
         </section>
     </main>
 </body>
