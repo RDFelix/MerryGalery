@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MerryGalery</title>
+    <link rel="stylesheet" href="./public/css/output.css">
+</head>
+<style>
+    @font-face {
+        font-family: 'signature';
+        src: url('./assets/fonts/heligthon_signature.woff2') format('woff2'),
+            url('./assets/fonts/heligthon_signature.woff') format('woff'),
+            url('./assets/fonts/heligthon_signature.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'pompiere';
+        src: url('./assets/fonts/pompiere_regular.woff2') format('woff2'),
+            url('./assets/fonts/pompiere_regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+
+    .picked{
+        border: 4px solid #011d44;
+        box-shadow: 0 0 7px #022a63b9;
+    }
+</style>
+<body class="m-0 p-10 bg-[#faf5ef] md:px-20 md:py-8">
+    <main class="md:grid md:grid-cols-2">
+        <section class="flex flex-col items-center mb-5">
+            <article class="mb-5 w-[250px] md:w-[380px]">
+                <h1 class="mb-2 text-start text-3xl text-[#011d44] md:text-5xl" style="font-family: signature, normal ;">Jannier Lopez</h1>
+                <h1 class="text-end text-3xl text-[#011d44] md:text-5xl" style="font-family: signature, normal ;">& Karen Ruiz</h1>
+            </article>
+            <img class="max-h-[50vh]" src="./assets/img/casados.png" alt="">
+            <h1 class="text-3xl px-5 w-full text-center text-slate-50 col-span-2 bg-[#011d44] md:w-auto pb-0 pt-2 md:px-20 rounded-[50px] md:col-span-3 md:text-3xl" style="font-family: signature, normal; background-image: url('./assets/img/flower_2.png'); background-repeat: no-repeat; background-position-x: 95%; background-size: 12%;">Recuerdos de la boda</h1>
+        </section>
+        <form class="" action="" method="post">
+            <article class="mb-4">
+                <label for="first_name" class="block mb-2 text-lg first:font-medium text-[#011d44]">Nombre del invitado</label>
+                <input type="text" id="first_name" class="bg-[#011d44] border border-gray-300 text-gray-300 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Ingresa el nombre del invitado" required />
+            </article>
+            <article class="mb-4">
+                <h4 class="block mb-2 text-lg first:font-medium text-[#011d44]">Elige un color</h4>
+                <div class="grid grid-cols-3  gap-3 md:grid-cols-5">
+                    <span class="bg-pink-400 rounded-full shadow-sm w-[40px] h-[40px] pick-color border-[0px] transition-all picked" data-color="pink"></span>
+                    <span class="bg-blue-400 rounded-full shadow-sm w-[40px] h-[40px] pick-color border-[0px] transition-all" data-color="blue"></span>
+                    <span class="bg-green-400 rounded-full shadow-sm w-[40px] h-[40px] pick-color border-[0px] transition-all" data-color="green"></span>
+                    <span class="bg-violet-400 rounded-full shadow-sm w-[40px] h-[40px] pick-color border-[0px] transition-all" data-color="violet"></span>
+                    <span class="bg-red-400 rounded-full shadow-sm w-[40px] h-[40px] pick-color border-[0px] transition-all" data-color="red"></span>
+                    <span class="bg-yellow-400 rounded-full shadow-sm w-[40px] h-[40px] pick-color border-[0px] transition-all" data-color="yellow"></span>
+                </div>
+            </article>
+            <article class="mb-4">
+                <h4 class="block mb-2 text-lg first:font-medium text-[#011d44]">Eije un emoji</h4>
+                <div class="grid grid-cols-3 gap-3 md:grid-cols-5">
+                    <span class="flex items-center justify-center text-lg bg-pink-400 rounded-full w-[40px] h-[40px] pick-emoji shadow-sm transition-all" data-emoji="1">🌷</span>
+                    <span class="flex items-center justify-center text-lg bg-pink-400 rounded-full w-[40px] h-[40px] pick-emoji shadow-sm transition-all" data-emoji="2">🌼</span>
+                    <span class="flex items-center justify-center text-lg bg-pink-400 rounded-full w-[40px] h-[40px] pick-emoji shadow-sm transition-all" data-emoji="3">😜</span>
+                    <span class="flex items-center justify-center text-lg bg-pink-400 rounded-full w-[40px] h-[40px] pick-emoji shadow-sm transition-all" data-emoji="4">🤑</span>
+                    <span class="flex items-center justify-center text-lg bg-pink-400 rounded-full w-[40px] h-[40px] pick-emoji shadow-sm transition-all" data-emoji="5">🌺</span>
+                    <span class="flex items-center justify-center text-lg bg-pink-400 rounded-full w-[40px] h-[40px] pick-emoji shadow-sm transition-all" data-emoji="6">🥳</span>
+                    <span class="flex items-center justify-center text-lg bg-pink-400 rounded-full w-[40px] h-[40px] pick-emoji shadow-sm transition-all" data-emoji="7">😄</span>
+                    <span class="flex items-center justify-center text-lg bg-pink-400 rounded-full w-[40px] h-[40px] pick-emoji shadow-sm transition-all" data-emoji="8">😆</span>
+                </div>
+            </article>
+
+            <p class="text-2xl text-[#011d44] px-5 text-center" style="font-family: pompiere, normal;">"Esta es nuestra Galeria de recuerdo de la boda, sube tus mejores fotos o videos de la boda. Recuerda ser prudente a la hora de subir el contenido, muchas gracias"</p>
+
+            <a type="button" href="index.html" class="group text-white bg-[#011d44] hover:bg-[#182435] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
+                Ingresar
+                <svg class="group-hover:translate-x-1 transition-all rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+            </a>
+        </form>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.1/dist/flowbite.min.js"></script>
+<script>
+    const $ = element => document.querySelectorAll(element);
+
+    $('.pick-color').forEach(color => {
+        color.addEventListener('click', () => {
+            $('.pick-color').forEach(c => c.classList.remove('picked'));
+            $('.pick-emoji').forEach(flower => {
+                $('.pick-emoji').forEach(f => f.classList.remove('bg-pink-400', 'bg-blue-400', 'bg-green-400', 'bg-violet-400', 'bg-red-400', 'bg-yellow-400'));
+                $('.pick-emoji').forEach(f => f.classList.add(`bg-${color.dataset.color}-400`));
+            });
+            color.classList.add('picked');
+        });
+    });
+
+    $('.pick-emoji').forEach(flower => {
+        flower.addEventListener('click', () => {
+            $('.pick-emoji').forEach(f => f.classList.remove('picked'));
+            flower.classList.add('picked');
+        });
+    });
+</script>
+</html>
